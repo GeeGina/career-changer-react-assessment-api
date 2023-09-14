@@ -20,7 +20,7 @@ const Home = () => {
   },[reload])
 
   const updateData = async (fName,lName,position) => {
-    setId(Number(id)+1)
+    // e.preventDefault();
     const response = await axios.put("https://jsd5-mock-backend.onrender.com/members",
       {
         id: id,
@@ -29,6 +29,7 @@ const Home = () => {
         position: position,
       }
     )
+    setId(Number(id)+1)
     setReload(!reload)
   };
 

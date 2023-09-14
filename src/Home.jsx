@@ -23,10 +23,10 @@ const Home = () => {
     setId(Number(id)+1)
     const response = await axios.put("https://jsd5-mock-backend.onrender.com/members",
       {
-        "id": id,
-        "name": fName,
-        "lastname": lName,
-        "position": position
+        id: id,
+        name: fName,
+        lastname: lName,
+        position: position,
       }
     )
     setReload(!reload)

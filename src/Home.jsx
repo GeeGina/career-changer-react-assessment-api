@@ -32,9 +32,12 @@ const Home = () => {
     setReload(!reload)
   };
 
-  const removeHandle = (update) => {
-    setData(update);
-  };
+  const removeHandle = async (id) => {
+    const response = await axios.delete(`https://jsd5-mock-backend.onrender.com/member/${id}`,{
+      id:id
+    })
+    setReload(!reload)
+};
 
   return (
     <Layout>

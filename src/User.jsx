@@ -2,10 +2,6 @@ import React from "react";
 import "./style.css";
 
 const User = ({ isAdmin, data , removeHandle }) => {
-  const deleteItem =(id) =>{
-    const updateData = data.filter((item) => item.id !== id)
-    removeHandle(updateData)
-  }
   return (
     <>
       <table className="dataTable">
@@ -26,7 +22,7 @@ const User = ({ isAdmin, data , removeHandle }) => {
               <td>{member.position}</td>
               {isAdmin && (
                 <td>
-                  <button className="delete" onClick={() => deleteItem(member.id)}>Delete</button>
+                  <button className="delete" onClick={() => removeHandle(member.id)}>Delete</button>
                 </td>
               )}
             </tr>

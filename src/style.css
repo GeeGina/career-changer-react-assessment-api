@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Mitr:wght@500&family=Poppins&display=swap');
+*{
+  text-align: center;
+  background-color: #fef6e4	;
+  font-family: 'Mitr', sans-serif;
+  color: #001858;
+}
+/* ----------Nav---------- */
+.nav{
+  border-bottom: 1px solid;
+}
+ul {
+  display: flex;
+  justify-content: right;
+}
+li {
+  list-style: none;
+  font-size: 20px;
+  /* padding: 4px; */
+  margin: 8px 16px;
+}
+a {
+  text-decoration: none;
+}
+/* ----------Table---------- */
+table{
+  margin: auto;
+  margin-top: 2%;
+  border-collapse: collapse;
+}
+th,td{
+  width: 29%;
+  padding: 4px;
+  border: 1px solid;
+}
+th{
+  background-color: #8bd3dd;
+}
+td{
+  background-color: white;
+}
+/* ----------Owner---------- */
+img{
+  width: 300px;
+  height: 300px;
+}
+.bio{
+  width: 50%;
+  margin: auto;
+}
+/* ----------Input,btn---------- */
+input{
+  margin: 6px;
+  background-color: white;
+  border: none;
+}
+.btnDisplay{
+  box-shadow: 0 4px 4px 0;
+  padding: 10px 6px;
+  background-color: #f582ae;
+  margin: 0 20px;
+  
+}
+.delete{
+  /* color: #fef6e4; */
+  background-color: #c3f0ca;
+}
+.save{
+  color: #fef6e4;
+  background-color: #594a4e;
+  margin: 6px;
+  padding: 4px 6px;
+}
+:disabled{
+  background-color: darkgrey;
+}

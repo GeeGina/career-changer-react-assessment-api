@@ -40,7 +40,7 @@ const Admin = ({ isAdmin, data, updateData , removeHandle}) => {
           value={position}
           onChange={(e) => setPosition(e.target.value)}
         ></input>
-        <button type="submit" className="save" onClick={updateData(fName,lName,position)} disabled={!formValid}>
+        <button type="submit" className="save" onClick={()=> updateData(fName,lName,position)} disabled={!formValid}>
           Save
         </button>
       </form>
